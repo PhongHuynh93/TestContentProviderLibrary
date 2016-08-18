@@ -1,7 +1,9 @@
-package dhbk.android.testcontentproviderlibrary;
+package dhbk.android.testcontentproviderlibrary.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import dhbk.android.testcontentproviderlibrary.R;
 
 public class MainActivity extends AppCompatActivity {
 
