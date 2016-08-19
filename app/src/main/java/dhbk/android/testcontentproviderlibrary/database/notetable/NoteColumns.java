@@ -1,10 +1,13 @@
-package dhbk.android.testcontentproviderlibrary.database;
+package dhbk.android.testcontentproviderlibrary.database.notetable;
 
 import net.simonvt.schematic.annotation.AutoIncrement;
 import net.simonvt.schematic.annotation.Check;
 import net.simonvt.schematic.annotation.DataType;
 import net.simonvt.schematic.annotation.PrimaryKey;
 import net.simonvt.schematic.annotation.References;
+
+import dhbk.android.testcontentproviderlibrary.database.NotesDatabase;
+import dhbk.android.testcontentproviderlibrary.database.listtable.ListColumns;
 
 import static net.simonvt.schematic.annotation.DataType.Type.INTEGER;
 import static net.simonvt.schematic.annotation.DataType.Type.TEXT;
@@ -30,7 +33,7 @@ public interface NoteColumns {
     @AutoIncrement
     String ID = "_id";
 
-    // column 2 - related to the position in the list that users has clicked
+    // column 2 - related to id of list table
     @DataType(INTEGER)
     @References(table = NotesDatabase.Tables.LISTS, column = ListColumns.ID)
     String LIST_ID = "listId";
