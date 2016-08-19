@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements ListsFragment.OnL
 
     /**
      * {@link ListsFragment}
+     * call when click a row in list view
      * @param listId
      */
     @Override
