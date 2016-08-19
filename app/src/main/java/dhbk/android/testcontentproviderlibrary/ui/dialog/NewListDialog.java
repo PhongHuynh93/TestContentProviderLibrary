@@ -39,6 +39,7 @@ public class NewListDialog extends DialogFragment {
                         new Thread(new Runnable() {
                             @Override
                             public void run() {
+                                // TODO: 8/19/16 insert into list db
                                 ContentValues cv = new ContentValues();
                                 cv.put(ListColumns.TITLE, name);
                                 context.getContentResolver().insert(NotesProvider.Lists.CONTENT_URI, cv);
